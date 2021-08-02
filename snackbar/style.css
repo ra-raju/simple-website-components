@@ -1,0 +1,60 @@
+.snackbar {
+  font-size: 1.2rem;
+  background-color: rgba(51, 51, 51, 0.717);
+  color: white;
+  padding: 1rem;
+  min-width: 250px;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -125px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  display: none;
+}
+
+.snackbar.show {
+  display: block;
+  animation: fadein 0.5s fadeout 0.5s;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeut {
+  from {
+    bottom: 30px;
+    opacity: 01;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+button {
+  height: 3rem;
+  width: 10rem;
+  border: none;
+  background-color: yellowgreen;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+}
